@@ -1,14 +1,14 @@
 with source as (
-
-    select * from {{ source('aw_elt','stateprovince') }}
+    select * 
+    from {{ source('aw_elt','stateprovince') }}
 
 ), stateprovince as (
     select
         stateprovinceid
-        , name as state 
-        , territoryid
         , countryregioncode
+        , name as state 
     from source
 )
 
-select * from stateprovince
+select * 
+from stateprovince

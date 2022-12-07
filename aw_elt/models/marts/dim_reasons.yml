@@ -1,0 +1,19 @@
+version: 2
+
+
+models:
+
+  - name: dim_reasons
+    description: Model with id and full name of the customers.
+    columns:
+    
+      - name: reason_sk
+        description: Identification for orders. Foreign key to fct_sales.
+        tests:
+          - not_null
+          - unique
+        
+      - name: reason
+        description: Name of the reasons in groups.
+       
+          

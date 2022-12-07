@@ -1,0 +1,23 @@
+version: 2
+
+
+models:
+
+  - name: stg_persons
+    description: Model with id and full name of the persons.
+    columns:
+
+      - name: businessentityid
+        description: Unique identification for persons records.
+        tests:
+          - not_null
+          - unique
+
+      - name: firstname
+        description: First name of the person.
+
+      - name: middlename
+        description: Middle name or middle initial of the person.
+
+      - name: lastname
+        description: Last name of the person.

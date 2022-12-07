@@ -1,15 +1,16 @@
 with source as (
-
-    select * from {{ source('aw_elt','salesorderdetail') }}
+    select * 
+    from {{ source('aw_elt','salesorderdetail') }}
 
 ), salesordersdetails as (
     select
         salesorderid
-        , orderqty 
         , productid
+        , orderqty 
         , unitprice
         , unitpricediscount
     from source
 )
 
-select * from salesordersdetails
+select * 
+from salesordersdetails

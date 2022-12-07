@@ -15,14 +15,15 @@ with addresses as (
 
 ), joining as (
     select
-          addresses.addressid as location_sk
+        addresses.addressid as location_sk
 	    , addresses.city
         , stateprovince.state
         , countryregion.country
-   from addresses
-   left join stateprovince  on addresses.stateprovinceid = stateprovince.stateprovinceid 
-   left join countryregion on stateprovince.countryregioncode = countryregion.countryregioncode
+    from addresses
+    left join stateprovince  on addresses.stateprovinceid = stateprovince.stateprovinceid 
+    left join countryregion on stateprovince.countryregioncode = countryregion.countryregioncode
 
 )
 
-select * from joining
+select * 
+from joining

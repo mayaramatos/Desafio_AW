@@ -1,0 +1,18 @@
+version: 2
+
+
+models:
+
+  - name: dim_customers
+    description: Model with id and full name of the customers.
+    columns:
+    
+      - name: customer_sk
+        description: Unique identification for customers.
+        tests:
+          - unique
+        
+      - name: customer_name
+        description: Full name of the customers.
+       
+          

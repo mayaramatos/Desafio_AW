@@ -1,0 +1,64 @@
+version: 2
+
+
+models:
+
+  - name: fct_sales
+    description: Big table with id and general sales order information.
+    columns:
+    
+      - name: sales_fk
+        description: Identification of orders.
+        tests:
+          - not_null
+        
+
+      - name: customer_fk
+        description: Identification of customers.
+
+      - name: location_fk
+        description: Identification of locations.
+
+      - name: product_fk
+        description: Identification of products.
+
+      - name: customer_name
+        description: Customer name.
+
+      - name: product_name
+        description: Product name.
+
+      - name: orderqty
+        description: Quantity ordered per product.
+
+      - name: unitprice
+        description: Selling price of a single product.
+
+      - name: status
+        description: Order current status. 
+
+      - name: cardtype
+        description: Credit card name.
+       
+      - name: reason
+        description: Reason name.
+
+      - name: city
+        description: City name.
+
+      - name: state
+        description: State or province name.
+
+      - name: country
+        description: Country name.
+
+      - name: order_date
+        description: Dates the sales order was created.
+
+      - name: order_month
+        description: Month the sales order was created.
+
+      - name: order_year
+        description: Year the sales order was created.
+
+  

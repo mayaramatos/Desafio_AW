@@ -1,12 +1,13 @@
 with source as (
-
-    select * from {{ source('aw_elt','customer') }}
+    select * 
+    from {{ source('aw_elt','customer') }}
 
 ), customers as (
     select
-         customerid
-        ,personid
+        customerid
+        , personid
     from source
 )
 
-select * from customers
+select * 
+from customers

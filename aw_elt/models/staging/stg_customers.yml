@@ -1,0 +1,18 @@
+version: 2
+
+
+models:
+
+  - name: stg_customers
+    description: Model with id of the customers.
+    columns:
+
+      - name: customerid
+        description: Unique identification for customers.
+        tests:
+          - not_null
+          - unique
+
+      - name: personid
+        description: Foreign key to Person table.
+     

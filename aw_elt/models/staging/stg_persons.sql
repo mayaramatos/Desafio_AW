@@ -1,6 +1,6 @@
 with source as (
-
-    select * from {{ source('aw_elt','person') }}
+    select * 
+    from {{ source('aw_elt','person') }}
 
 ), persons as (
     select
@@ -11,4 +11,5 @@ with source as (
     from source
 )
 
-select * from persons
+select * 
+from persons

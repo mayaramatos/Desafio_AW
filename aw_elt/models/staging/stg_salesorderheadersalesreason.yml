@@ -1,0 +1,18 @@
+version: 2
+
+
+models:
+
+  - name: stg_salesorderheadersalesreason
+    description: Cross-reference table mapping sales orders to sales reason codes.
+    columns:
+
+      - name: salesorderid
+        description: Identification for the orders.
+        tests:
+          - not_null
+         
+
+      - name: salesreasonid
+        description: Unique identification for the reasons types.
+     

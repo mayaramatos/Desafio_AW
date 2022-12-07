@@ -1,0 +1,18 @@
+version: 2
+
+
+models:
+
+  - name: stg_products
+    description: Model with id and name of the products.
+    columns:
+
+      - name: productid
+        description: Unique identification for products.
+        tests:
+          - not_null
+          - unique
+
+      - name: product_name
+        description: Products name.
+     

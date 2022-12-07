@@ -1,0 +1,22 @@
+version: 2
+
+
+models:
+
+  - name: stg_addresses
+    description: Model with id and name of the cities.
+    columns:
+
+      - name: addressid
+        description: Unique identification for the cities.
+        tests:
+          - not_null
+          - unique
+
+      - name: stateprovinceid
+        description: Unique identification number for the state or province. Foreign key to StateProvince table.
+
+      - name: city
+        description: City name
+
+   

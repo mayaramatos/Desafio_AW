@@ -1,6 +1,6 @@
 with source as (
-
-    select * from {{ source('aw_elt','countryregion') }}
+    select * 
+    from {{ source('aw_elt','countryregion') }}
 
 ), countryregion as (
     select
@@ -9,4 +9,5 @@ with source as (
     from source
 )
 
-select * from countryregion
+select * 
+from countryregion

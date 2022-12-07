@@ -1,13 +1,15 @@
 with source as (
-
-    select * from {{ source('aw_elt','address') }}
+    select * 
+    from {{ source('aw_elt','address') }}
 
 ), addresses as (
     select
         addressid
-        , city 
         , stateprovinceid
+        , city 
+       
     from source
 )
 
-select * from addresses
+select * 
+from addresses

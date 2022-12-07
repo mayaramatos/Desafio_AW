@@ -1,0 +1,23 @@
+version: 2
+
+
+models:
+
+  - name: dim_locations
+    description: Model with id and locations.
+    columns:
+    
+      - name: location_sk
+        description: Unique identification for location.
+        tests:
+          - not_null
+          - unique
+        
+      - name: city
+        description: City name.
+
+      - name: state
+        description: State or province name.
+
+      - name: country
+        description: Country name.

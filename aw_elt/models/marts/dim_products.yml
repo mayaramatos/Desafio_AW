@@ -1,0 +1,19 @@
+version: 2
+
+
+models:
+
+  - name: dim_products
+    description: Model with id and name of the products.
+    columns:
+    
+      - name: product_sk
+        description: Unique identification for products.
+        tests:
+          - not_null
+          - unique
+        
+      - name: product_name
+        description: Product name.
+       
+          

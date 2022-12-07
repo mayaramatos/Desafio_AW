@@ -1,6 +1,6 @@
 with source as (
-
-    select * from {{ source('aw_elt','salesorderheadersalesreason') }}
+    select * 
+    from {{ source('aw_elt','salesorderheadersalesreason') }}
 
 ), salesorderheadersalesreason as (
     select
@@ -9,4 +9,5 @@ with source as (
     from source
 )
 
-select * from salesorderheadersalesreason
+select * 
+from salesorderheadersalesreason

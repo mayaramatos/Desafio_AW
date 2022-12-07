@@ -1,6 +1,6 @@
 with source as (
-
-    select * from {{ source('aw_elt','product') }}
+    select * 
+    from {{ source('aw_elt','product') }}
 
 ), products as (
     select
@@ -9,4 +9,5 @@ with source as (
     from source
 )
 
-select * from products
+select * 
+from products

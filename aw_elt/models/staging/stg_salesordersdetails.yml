@@ -1,0 +1,27 @@
+version: 2
+
+
+models:
+
+  - name: stg_salesordersdetails
+    description: Model with individual products associated with a specific sales order.
+    columns:
+
+      - name: salesorderid
+        description: Unique identification for the orders.
+        tests:
+          - not_null
+       
+      - name: productid
+        description: Unique identification for the products.
+      
+      - name: orderqty
+        description: Quantity ordered per product.
+
+      - name: unitprice
+        description: Selling price of a single product.
+
+      - name: unitpricediscount
+        description: Discount amount.
+
+     

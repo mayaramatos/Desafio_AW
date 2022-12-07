@@ -1,0 +1,18 @@
+version: 2
+
+
+models:
+
+  - name: stg_countryregion
+    description: Model with id and name of the countries.
+    columns:
+
+      - name: countryregioncode
+        description: ISO standard code for countries and regions.
+        tests:
+          - not_null
+          - unique
+
+      - name: country
+        description: Name of the countries.
+     

@@ -1,6 +1,6 @@
 with source as (
-
-    select * from {{ source('aw_elt','creditcard') }}
+    select * 
+    from {{ source('aw_elt','creditcard') }}
 
 ), creditcards as (
     select
@@ -9,4 +9,5 @@ with source as (
     from source
 )
 
-select * from creditcards
+select * 
+from creditcards
