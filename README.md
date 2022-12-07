@@ -8,6 +8,7 @@
 ---
 
 <br/>
+
 # Índice 
 
 * [Índice](#índice)
@@ -19,6 +20,7 @@
 * [Dúvidas](#dúvidas)
 <br/>
 <br/>
+
 # 📋 Descrição do Projeto  
 Trata-se de projeto com a finalidade de obtenção da certificação em Engenharia de Analytics by Indicium.
 
@@ -48,8 +50,10 @@ O projeto tinha como principal objetivo a resposta das seguintes questões forne
 - Qual o número de pedidos, quantidade comprada, valor total negociado por mês e ano (dica: gráfico de série de tempo)?
 
 - Qual produto tem a maior quantidade comprada para o motivo “Promotion”?
+
 <br/>
 <br/>
+
 # 📁 Acesso ao projeto
 
 Clone o repositório pelo link:
