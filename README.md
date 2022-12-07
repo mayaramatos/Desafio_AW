@@ -35,6 +35,8 @@ Será avaliado conhecimentos em:
 - Uso de ferramenta dbt
 - Construção de dashboards de BI
 
+ <br/>
+
 Foi utilizado os dados da Adventure Works (PostgreSQL) que representa uma indústria de bicicletas. Esses dados estão distribuídos em 68 tabelas divididas em 5 schemas: HR (recursos humanos), sales (vendas), production (produção) e purchasing (compras).
 
 O projeto tinha como principal objetivo a resposta das seguintes questões fornecidas em um BI:
